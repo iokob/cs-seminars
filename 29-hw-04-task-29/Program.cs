@@ -1,12 +1,8 @@
-﻿Console.WriteLine("* * * Начало программы * * *");
-
+﻿Console.WriteLine("* * * Введите 8 чисел, разделяя их enter * * *");
 int[] array = new int[8];
-int[] GetRandomArray(int[] array) {
-    Random rdn = new Random();
-    for (int i = 0; i < array.Length; i++){
-        array[i] = rdn.Next(2);
-    }
-    return array;
+
+for (int i = 0; i < array.Length; i++) {
+    array[i] = Convert.ToInt32(Console.ReadLine());
 }
 
 void PrintArray(int[] array) {
@@ -16,8 +12,6 @@ void PrintArray(int[] array) {
     Console.WriteLine(" ");
 }
 
-array = GetRandomArray(array);
 PrintArray(array);
-
 
 Console.WriteLine("* * * Работа программы завершена * * *");
