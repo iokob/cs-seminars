@@ -1,14 +1,14 @@
 ﻿Console.WriteLine("* * * Начало работы программы * * *");
 Console.WriteLine("* y = k1 * x + b1 *");
 Console.WriteLine("* Введите k1 и нажмите ENTER *");
-double k1 = Convert.ToInt32(Console.ReadLine());
+double k1 = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("* Введите b1 и нажмите ENTER *");
-double b1 = Convert.ToInt32(Console.ReadLine());
+double b1 = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("* y = k2 * x + b2 *");
 Console.WriteLine("* Введите k2 и нажмите ENTER *");
-double k2 = Convert.ToInt32(Console.ReadLine());
+double k2 = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("* Введите b2 и нажмите ENTER *");
-double b2 = Convert.ToInt32(Console.ReadLine());
+double b2 = Convert.ToDouble(Console.ReadLine());
 double[] pos = new double[2];
 double[] calcPos (double k1, double b1, double k2, double b2) {
     double x = 0;
